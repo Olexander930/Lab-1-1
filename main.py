@@ -1,11 +1,22 @@
-N=int(input("Введіть ціле число в межах від 1 до 9: " ))
-if N<1 or N>9:
-  print("Ви ввели чсло яке не входить в межі від 1 до 9")
+a=int(input ("Введіть а: "))
+b=int(input ("Введіть b: "))
+if b==0:
+  print("Ділення на 0")
+
+elif a < 0 or b < 0:
+  print("Будь ласка, введіть додатні числа")
+
 else:
-  for i in range(N,0,-1):
-    print("5 " *i)
-  for i in range(1,N+1):
-    print("5 " *i)
+  if a>b:
+     x=(b*a+1)
+
+  elif a==b:
+    x=-10
+
+  else:
+     x=(a-5)/b
+  print("Результат обчислення виразу x =" , x)
+
 
 
 
